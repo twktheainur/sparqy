@@ -9,6 +9,8 @@ import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,6 +25,8 @@ public class OWLTBoxModel implements OntologyModel {
     private String propPath = String.format("data%sgraphapi.properties", File.separatorChar);
     private Properties properties;
 
+    private static final Logger logger = LoggerFactory.getLogger(OWLTBoxModel.class);
+
     /**
      * Default constructor
      *
@@ -30,7 +34,11 @@ public class OWLTBoxModel implements OntologyModel {
      */
     @SuppressWarnings("unused")
     public OWLTBoxModel() throws IOException{
-        loadProperties();
+        try {
+            loadProperties();
+        } catch (IOException e){
+            logger.warn("Cannot load default ontology properties");
+        }
         createModel(null);
     }
 
@@ -77,7 +85,7 @@ public class OWLTBoxModel implements OntologyModel {
      *
      * @throws IOException When the properties cannot be loaded
      */
-    protected void loadProperties() throws IOException, java.io.FileNotFoundException {
+    protected void loadProperties() throws IOException {
         properties = new Properties();
         properties.load(new FileInputStream(propPath));
     }
