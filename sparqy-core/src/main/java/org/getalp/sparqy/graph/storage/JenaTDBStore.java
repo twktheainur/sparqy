@@ -6,8 +6,8 @@ import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.tdb.TDBFactory;
-import org.getalp.sparqy.graph.store.QueryCache;
-import org.getalp.sparqy.graph.store.Store;
+import lib.sparqy.graph.store.QueryCache;
+import lib.sparqy.graph.store.Store;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,7 +1,7 @@
 package org.getalp.sparqy.graph.storage;
 
 import com.hp.hpl.jena.query.ResultSet;
-import org.getalp.sparqy.graph.store.QueryCache;
+import lib.sparqy.graph.store.QueryCache;
 
 import java.util.HashMap;
 import java.util.Map;

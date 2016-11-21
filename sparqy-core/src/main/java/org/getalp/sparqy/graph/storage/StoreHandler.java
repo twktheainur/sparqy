@@ -1,7 +1,7 @@
 package org.getalp.sparqy.graph.storage;
 
 
-import org.getalp.sparqy.graph.store.Store;
+import lib.sparqy.graph.store.Store;
 
 /**
  * A static register class for a triple store

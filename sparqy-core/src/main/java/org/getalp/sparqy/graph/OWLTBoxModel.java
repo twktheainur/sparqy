@@ -9,6 +9,7 @@ import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import lib.sparqy.graph.OntologyModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

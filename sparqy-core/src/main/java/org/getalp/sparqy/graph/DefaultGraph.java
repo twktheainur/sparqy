@@ -5,7 +5,8 @@ package org.getalp.sparqy.graph;
 
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.NodeFactory;
-import org.getalp.sparqy.Graph;
+import lib.sparqy.Graph;
+import lib.sparqy.graph.OntologyModel;
 
 
 /**

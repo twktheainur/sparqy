@@ -8,7 +8,7 @@
     <url>https://github.com/twktheainur/sparqy</url>
 
     <parent>
-        <groupId>lib.sparqy</groupId>
+        <groupId>org.getalp</groupId>
         <artifactId>sparqy</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>

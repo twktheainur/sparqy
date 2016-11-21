@@ -6,7 +6,7 @@ package org.getalp.sparqy.graph.storage;
 import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-import org.getalp.sparqy.graph.store.Store;
+import lib.sparqy.graph.store.Store;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
