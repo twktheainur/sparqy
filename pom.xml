@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.getalp</groupId>
+    <groupId>io.github.twktheainur</groupId>
     <artifactId>sparqy</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -12,6 +12,33 @@
         <module>sparqy-api</module>
         <module>sparqy-core</module>
     </modules>
+
+
+    <description>A small Jena ARQ wrapper to make building queries programmatically and running them easier.</description>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Andon Tchechmedjiev</name>
+            <email>andon@tchechmedjiev.eu</email>
+            <organization>LIG</organization>
+            <organizationUrl>http://andon.tchechmedjiev.eu</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/twktheainur/sparqy.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/twktheainur/sparqy.git</developerConnection>
+        <url>http://github.com/twktheainur/sparqy/tree/master</url>
+        <tag>sparqy-1.0</tag>
+    </scm>
+
 
     <distributionManagement>
         <snapshotRepository>
